@@ -6,11 +6,12 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 16:22:22 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/28 13:28:35 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/28 14:57:19 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
 
 static int count_word(const char *str, char c);
 static char *fill_word(const char *str, int start, int end);
@@ -27,7 +28,7 @@ char **ft_split (const char *s, char c)
 	j = 0;
 	is_word = -1;
 
-	res = (char *)malloc((count_word(s, c) + 1) * sizeof(char));
+	res = malloc((count_word(s, c) + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
 	while (i <= ft_strlen(s))
@@ -44,7 +45,7 @@ char **ft_split (const char *s, char c)
 		}
 		i++;
 	}
-	res[i] = '\0';
+	res[j] = NULL;
 	return (res);
 }
 
@@ -76,7 +77,7 @@ static char *fill_word(const char *str, int start, int end)
 		i++;
 		start++;
 	}
-	word[i] = 0;
+	word[i] = '\0';
 	return (word);
 }
 
@@ -85,7 +86,7 @@ static int count_word(const char *str, char c)
 	int count;
 	int is_in_word;
 
-	i = 0;
+	is_in_word = 0;
 	count = 0;
 
 	while (*str)
@@ -100,4 +101,24 @@ static int count_word(const char *str, char c)
 			str++;
 	}
 	return(count);
+}
+#include <stdio.h>
+
+int main (void)
+{
+    char str[] = "Hello, how are you?";
+    char c = ' ';
+    char **result = ft_split(str, c);
+
+    if (result)
+    {
+        for (int i = 0; result[i] != NULL; i++)
+        {
+            printf("%s\n", result[i]);
+            free(result[i]);
+        }
+        free(result);
+    }
+
+    return 0;
 }
