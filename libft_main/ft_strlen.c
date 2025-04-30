@@ -6,7 +6,7 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 16:31:55 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/26 13:17:16 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/29 18:39:43 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
 
 size_t ft_strlen(const char *str)
 {
- 	int i = 1;
+ 	size_t i;
+
+	i = 0;
 	while (str[i])
 	{
 		i++;

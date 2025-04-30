@@ -6,12 +6,11 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 15:47:27 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/21 14:53:00 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/29 17:26:37 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -33,14 +32,14 @@ size_t ft_strlcpy(char *dst, const char *src, size_t size)
 	return len;
 }
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main (void)
-{
-	char dst [50];
-	char src [50] = "qwerty";
-	size_t n = 10;
+// int main (void)
+// {
+// 	char dst [50];
+// 	char src [50] = "qwerty";
+// 	size_t n = 10;
 	
-	printf("%zu", ft_strlcpy(dst, src, n));
-}
+// 	printf("%zu", ft_strlcpy(dst, src, n));
+// }

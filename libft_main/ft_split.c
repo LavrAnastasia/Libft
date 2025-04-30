@@ -6,35 +6,33 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 16:22:22 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/28 14:57:19 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/30 18:37:15 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-static int count_word(const char *str, char c);
-static char *fill_word(const char *str, int start, int end);
-static void *ft_free(char **strs,  int count);
+static int	count_word(const	char	*str, char c);
+static char	*fill_word(const	char	*str, int start, int end);
+static void	*ft_free(char	**strs,	int count);
 
-char **ft_split (const char *s, char c)
+char	**ft_split(const	char	*s, char c)
 {
-	char **res;
-	size_t i;
-	int j;
-	int is_word;
+	int		is_word;
+	int		j;
+	char		**res;
+	size_t			i;
 
 	i = 0;
 	j = 0;
 	is_word = -1;
-
 	res = malloc((count_word(s, c) + 1) * sizeof(char *));
 	if (!res)
 		return (NULL);
 	while (i <= ft_strlen(s))
 	{
 		if (s[i] != c && is_word < 0)
-		is_word = i;
+			is_word = i;
 		else if ((s[i] == c || i== ft_strlen(s)) && is_word >= 0)
 		{
 			res[j] = fill_word (s, is_word, i);
@@ -49,9 +47,10 @@ char **ft_split (const char *s, char c)
 	return (res);
 }
 
-static void *ft_free(char **strs,  int count)
+static void	*ft_free(char	**strs, int count)
 {
-	int i;
+	int	i;
+
 	i = 0;
 	while (i < count)
 	{
@@ -98,27 +97,28 @@ static int count_word(const char *str, char c)
 		}
 		else if (*str == c)
 			is_in_word = 0;
-			str++;
+		str++;
+		
 	}
 	return(count);
 }
-#include <stdio.h>
+// #include <stdio.h>
 
-int main (void)
-{
-    char str[] = "Hello, how are you?";
-    char c = ' ';
-    char **result = ft_split(str, c);
+// int main (void)
+// {
+//     char str[] = "Hello, how are you?";
+//     char c = ' ';
+//     char **result = ft_split(str, c);
 
-    if (result)
-    {
-        for (int i = 0; result[i] != NULL; i++)
-        {
-            printf("%s\n", result[i]);
-            free(result[i]);
-        }
-        free(result);
-    }
+//     if (result)
+//     {
+//         for (int i = 0; result[i] != NULL; i++)
+//         {
+//             printf("%s\n", result[i]);
+//             free(result[i]);
+//         }
+//         free(result);
+//     }
 
-    return 0;
-}
+//     return 0;
+// }

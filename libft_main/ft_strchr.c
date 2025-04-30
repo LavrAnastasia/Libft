@@ -6,7 +6,7 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 16:03:04 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/24 15:25:54 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/29 17:25:26 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,14 +30,14 @@ char *ft_strchr(const char *s, int c)
 	 	return (char *)str;
 	return NULL;
 }
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main (void)
-{
-	char str [10] = "abcd";
-	char c;
-	c = 'a';
-	printf("%s\n", ft_strchr(str, c));
-	printf("%s\n", strchr(str, c));
-}
+// int main (void)
+// {
+// 	char str [10] = "abcd";
+// 	char c;
+// 	c = 'a';
+// 	printf("%s\n", ft_strchr(str, c));
+// 	printf("%s\n", strchr(str, c));
+// }

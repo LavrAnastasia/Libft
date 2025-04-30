@@ -6,13 +6,11 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 18:13:53 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/27 15:52:15 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/29 17:27:30 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 static char *result(const char *s1, size_t start, size_t end);
 static int to_trim (const char*set, char c);
@@ -66,9 +64,9 @@ static int to_trim(const char*set, char c)
 	}
 	return(0);
 }
-int main (void)
-{
-	char str1 [] = "   Anastasia   ";
-	char str2 [] = "   ";
-	printf("%s",ft_strtrim(str1, str2));
-}
+// int main (void)
+// {
+// 	char str1 [] = "   Anastasia   ";
+// 	char str2 [] = "   ";
+// 	printf("%s",ft_strtrim(str1, str2));
+// }

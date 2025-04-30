@@ -6,7 +6,7 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 12:56:25 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/22 15:44:23 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/29 17:26:17 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 
 
-int main (void)
-{
-	char dest [50] = "abcd";
-	char src [50] = "tfr";
-	size_t n;
-	n = 10;
-	printf("%zu", ft_strlcat (dest, src, n));
-}
+// int main (void)
+// {
+// 	char dest [50] = "abcd";
+// 	char src [50] = "tfr";
+// 	size_t n;
+// 	n = 10;
+// 	printf("%zu", ft_strlcat (dest, src, n));
+// }

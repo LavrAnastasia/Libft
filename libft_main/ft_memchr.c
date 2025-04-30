@@ -6,35 +6,37 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 14:44:23 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/23 17:12:43 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/30 17:16:37 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+//Scans the initial n bytes of the memory area pointed to by s for the first
+// instance of c. Return a pointer to the matching byte or NULL
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char *str;
-	str = (const unsigned char *)s;
+	const unsigned char	*str;
 
+	str = (const unsigned char *)s;
 	while (n > 0)
 	{
 		if (*str == (unsigned char)c)
-			return ((void*)str);
+			return ((void *)str);
 		str++;
 		n--;
 	}
-	return(NULL);
+	return (NULL);
 }
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main (void)
-{
-	char str [10] = "12345";
-	char c; 
-	c = '3';
-	size_t n;
-	n = 50;
-	printf("%s", (unsigned char*)ft_memchr(str, c, n));
-}
+// int main (void)
+// {
+// 	char str [10] = "12345";
+// 	char c; 
+// 	c = '3';
+// 	size_t n;
+// 	n = 50;
+// 	printf("%s", (unsigned char*)ft_memchr(str, c, n));
+// }

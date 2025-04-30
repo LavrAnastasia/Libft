@@ -6,7 +6,7 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 12:37:33 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/26 17:02:30 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/29 17:25:45 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,12 +30,12 @@ char *ft_strdup(const char *s)
 	dest[i] = '\0';
 	return (dest);
 }
-#include <stdio.h>
-#include <string.h>
-/*
-int main (void)
-{
-	char str [] = "azaza";
-	printf("%s", ft_strdup(str));
-}
-*/
+// #include <stdio.h>
+// #include <string.h>
+
+// int main (void)
+// {
+// 	char str [] = "azaza";
+// 	printf("%s", ft_strdup(str));
+// }
+

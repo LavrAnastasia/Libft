@@ -6,7 +6,7 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 15:57:31 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/26 17:18:52 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/29 17:26:18 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,10 @@ char *ft_strjoin(const char *s1, const char *s2)
 	result[j] = '\0';
 	return (result);
 }
-#include <stdio.h>
-int main (void)
-{
-	char str1 [] = "abra";
-	char str2 [] = "cadabra";
-	printf("%s", ft_strjoin(str1, str2));
-}
+// #include <stdio.h>
+// int main (void)
+// {
+// 	char str1 [] = "abra";
+// 	char str2 [] = "cadabra";
+// 	printf("%s", ft_strjoin(str1, str2));
+// }

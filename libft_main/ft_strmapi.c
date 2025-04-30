@@ -6,7 +6,7 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 12:01:41 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/04/29 14:12:05 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/04/29 17:26:45 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,19 +34,19 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	smodified[i] = '\0';
 	return(smodified);
 }
-#include <stdio.h>
-char ft_mapi(unsigned int i, char c)
-	{
-		if(i % 2 == 0)
-		{
-			return(c - 32);
-		}
-		return(c);
-	}
-int main (void)
-{
-	char *strmapi;
-	strmapi = "abcdef";
-	printf("%s", ft_strmapi(strmapi, ft_mapi));
-}
+// #include <stdio.h>
+// char ft_mapi(unsigned int i, char c)
+// 	{
+// 		if(i % 2 == 0)
+// 		{
+// 			return(c - 32);
+// 		}
+// 		return(c);
+// 	}
+// int main (void)
+// {
+// 	char *strmapi;
+// 	strmapi = "abcdef";
+// 	printf("%s", ft_strmapi(strmapi, ft_mapi));
+// }
 
