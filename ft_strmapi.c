@@ -6,12 +6,11 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 12:01:41 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/05/02 14:57:50 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/05/02 16:26:02 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 //What ft_strmapi does is apply the function f 
 // to every character of the string s.
 

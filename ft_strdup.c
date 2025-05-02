@@ -6,12 +6,11 @@
 /*   By: alavrukh <alavrukh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 12:37:33 by alavrukh          #+#    #+#             */
-/*   Updated: 2025/05/02 14:57:28 by alavrukh         ###   ########.fr       */
+/*   Updated: 2025/05/02 15:37:03 by alavrukh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strdup(const char *s)
 {
